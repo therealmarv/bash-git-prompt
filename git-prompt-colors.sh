@@ -21,8 +21,8 @@ GIT_PROMPT_COMMAND_FAIL="${Red}✘ "   # indicator if the last command returned 
 
 GIT_PROMPT_START_USER="${Yellow}${PathShort}${ResetColor}"
 GIT_PROMPT_START_ROOT="${Yellow}${PathShort}${ResetColor}"
-GIT_PROMPT_END_USER=" \n${White}${Time12a}${ResetColor} $ "
-GIT_PROMPT_END_ROOT=" \n${White}${Time12a}${ResetColor} # "
+GIT_PROMPT_END_USER=" \n${Bold}\$${ResetColor} "
+GIT_PROMPT_END_ROOT=" \n${Bold}#${ResetColor} "
 
 # Please do not add colors to these symbols
 GIT_PROMPT_SYMBOLS_AHEAD="↑·"         # The symbol for "n versions ahead of origin"

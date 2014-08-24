@@ -28,6 +28,12 @@ function git_prompt_config()
   ResetColor="\[\033[0m\]"            # Text reset
 
   # Bold
+  if tput setaf 1 &> /dev/null; then
+    tput sgr0
+    local Bold=$(tput bold)
+  else
+    local Bold=""
+  fi
   local BoldGreen="\[\033[1;32m\]"    # Green
   local BoldBlue="\[\033[1;34m\]"     # Blue
 
